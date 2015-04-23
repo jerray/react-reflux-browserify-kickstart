@@ -1,0 +1,35 @@
+{
+  "name": "react-reflux-browserify-kickstart",
+  "version": "0.1.0",
+  "description": "React kickstart. Using reflux and browserify.",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "mkdir -p public/js > /dev/null && browserify -t reactify src/app.js -o public/js/app.js",
+    "watch-build": "mkdir -p public/js > /dev/null && watchify -d -t reactify src/app.js -o public/js/app.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/7lemon/react-reflux-browserify-kickstart.git"
+  },
+  "keywords": [
+    "react",
+    "reflux",
+    "browserify"
+  ],
+  "author": "7lemon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/7lemon/react-reflux-browserify-kickstart/issues"
+  },
+  "homepage": "https://github.com/7lemon/react-reflux-browserify-kickstart",
+  "dependencies": {
+    "react": "^0.13.2",
+    "reflux": "^0.2.7"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.8",
+    "reactify": "^1.1.0",
+    "watchify": "^3.1.2"
+  }
+}
