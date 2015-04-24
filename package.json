@@ -6,6 +6,7 @@
   "scripts": {
     "build": "mkdir -p public/js > /dev/null && browserify -t reactify src/app.js -o public/js/app.js",
     "watch-build": "mkdir -p public/js > /dev/null && watchify -d -t reactify src/app.js -o public/js/app.js",
+    "serve": "browser-sync start --server \"public\" --files \"public/css/*.css, public/*.html, public/js/*.js\" --no-notify",
     "test": "mocha"
   },
   "repository": {
