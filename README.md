@@ -6,7 +6,7 @@
 git clone https://github.com/7lemon/react-reflux-browserify-kickstart.git myproject
 cd myproject
 npm install
-npm install -g browserify watchify
+npm install -g browserify watchify uglify-js
 ```
 
 ### Build

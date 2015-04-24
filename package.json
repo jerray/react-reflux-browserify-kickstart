@@ -1,11 +1,11 @@
 {
   "name": "react-reflux-browserify-kickstart",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "React kickstart. Using reflux and browserify.",
   "private": true,
   "main": "src/app.js",
   "scripts": {
-    "build": "mkdir -p public/js > /dev/null && browserify -t reactify src/app.js -o public/js/app.js",
+    "build": "mkdir -p public/js > /dev/null && browserify -t reactify src/app.js | uglifyjs -o public/js/app.js",
     "watch-build": "mkdir -p public/js > /dev/null && watchify -d -t reactify src/app.js -o public/js/app.js",
     "serve": "browser-sync start --server \"public\" --files \"public/css/*.css, public/*.html, public/js/*.js\" --no-notify",
     "test": "mocha"
